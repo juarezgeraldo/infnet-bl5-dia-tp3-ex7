@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/festa"
+    android:padding="8dp"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:id="@+id/text_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="01/01/2019"
+        android:textSize="26sp" />
+
+    <View
+        android:id="@+id/view_traco"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_today"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/text_label_days_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_traco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/dias_restantes_para_o_fim_do_ano"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_days_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_label_days_left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="365 dias"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_days_left"
+        android:background="@drawable/button_background"
+        android:padding="24dp"
+        android:layout_marginTop="100dp"
+        android:text="SIM/NÃO/Não confirmado"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/button_confirm"
+        android:background="@drawable/button_background"
+        android:padding="24dp"
+        android:text="FECHAR"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="18sp" />
+
+</RelativeLayout>
